@@ -3,40 +3,36 @@ body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
-  background: #f5f5f5;
 }
 header {
-  background: #004080;
+  background-color: #003366;
   color: white;
-  padding: 1rem 0;
-}
-.container {
-  width: 90%;
-  max-width: 1200px;
-  margin: 0 auto;
+  padding: 1rem;
 }
 nav ul {
-  list-style: none;
   display: flex;
-  gap: 1rem;
+  list-style: none;
   padding: 0;
+  gap: 1rem;
 }
 nav a {
   color: white;
   text-decoration: none;
 }
 .hero {
-  background: #0066cc;
+  background: #0055aa;
   color: white;
-  padding: 4rem 0;
+  padding: 2rem;
   text-align: center;
 }
-section {
-  padding: 2rem 0;
+.main-logo {
+  display: block;
+  max-width: 300px;
+  margin: 2rem auto;
 }
 footer {
-  background: #333;
+  background: #222;
   color: white;
   text-align: center;
-  padding: 1rem 0;
+  padding: 1rem;
 }
