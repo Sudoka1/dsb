@@ -1,11 +1,121 @@
-<!DOCTYPE html><html lang='de'>
-    <head><meta charset='UTF-8'><link rel='stylesheet' href='style.css'>
-    <title>kontakt.html</title></head><body>
-    <header><nav><ul>
-    <li><a href='index.html'>Start</a></li>
-    <li><a href='ueber-uns.html'>Über uns</a></li>
-    <li><a href='sudo-in-deutschland.html'>SUDO in Deutschland</a></li>
-    <li><a href='kontakt.html'>Kontakt</a></li>
-    <li><a href='dokumente.html'>Dokumente</a></li>
-    </ul></nav></header><main><h2>Kontakt</h2><p>Schreiben Sie uns an <a href='mailto:kss.paderborn@gmail.com'>kss.paderborn@gmail.com</a>.</p></main>
-    <footer><p>&copy; 2025 Deutscher SUDO-Bund</p></footer></body></html>
+<!DOCTYPE html>
+<html lang='de'>
+<head>
+  <meta charset='UTF-8'>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kontakt – Deutscher SUDO-Bund</title>
+  <link rel='stylesheet' href='style.css'>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background-color: #f4f4f4;
+    }
+    header, footer {
+      background-color: #0d2a54;
+      color: white;
+      padding: 15px 20px;
+      text-align: center;
+    }
+    nav ul {
+      list-style: none;
+      padding: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+    nav ul li a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    nav img {
+      height: 100px;
+      border-radius: 35%;
+      object-fit: contain;
+      background-color: red;
+      padding: 6px;
+    }
+    main {
+      max-width: 800px;
+      margin: 40px auto;
+      background-color: white;
+      padding: 40px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    h2 {
+      color: #0d2a54;
+      text-align: center;
+    }
+    .kontakt-info {
+      font-size: 18px;
+      margin-bottom: 30px;
+    }
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+    }
+    input, textarea {
+      padding: 10px;
+      font-size: 16px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+    button {
+      background-color: #d6001c;
+      color: white;
+      padding: 12px;
+      border: none;
+      border-radius: 5px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #b10016;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <nav>
+      <ul>
+        <li><a href='index.html'>Start</a></li>
+        <li><a href='ueber-uns.html'>Über uns</a></li>
+        <li><a href='sudo-in-deutschland.html'>SUDO in Deutschland</a></li>
+        <li><a href='kontakt.html'>Kontakt</a></li>
+        <li><a href='dokumente.html'>Spenden und Sponsoring</a></li>
+        <img src="ChatGPT Image 29. Juli 2025, 18_55_11.png" 
+             alt="Deutscher SUDO-Bund Logo" />
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h2>Kontakt</h2>
+
+    <div class="kontakt-info">
+      <p><strong>Deutscher SUDO-Bund e.V.</strong></p>
+      <p>Adresse: Sandtünsweg 7, 33129 Delbrück</p>
+      <p>E-Mail: <a href='mailto:info@worldsudo.com'>info@worldsudo.com</a></p>
+      <p>Telefon: +49 5251 012011</p>
+    </div>
+
+    <form action="mailto:kss.paderborn@gmail.com" method="post" enctype="text/plain">
+      <input type="text" name="name" placeholder="Ihr Name" required />
+      <input type="email" name="email" placeholder="Ihre E-Mail-Adresse" required />
+      <textarea name="message" rows="6" placeholder="Ihre Nachricht..." required></textarea>
+      <button type="submit">Nachricht senden</button>
+    </form>
+  </main>
+
+  <footer>
+    <p>&copy; 2016 Deutscher SUDO-Bund</p>
+  </footer>
+
+</body>
+</html>
